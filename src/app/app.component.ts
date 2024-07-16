@@ -4,6 +4,8 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { CurrentlyComponent } from './currently/currently.component';
+import { SkillsComponent } from './skills/skills.component';
+import { SkillListComponent } from "./skills/skill-list/skill-list.component";
 
 @Component({
   selector: 'app-root',
@@ -12,8 +14,9 @@ import { CurrentlyComponent } from './currently/currently.component';
     HeaderComponent,
     HomeComponent,
     AboutmeComponent,
-    CurrentlyComponent
-  ],
+    CurrentlyComponent,
+    SkillsComponent, 
+    SkillListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
