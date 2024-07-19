@@ -1,0 +1,28 @@
+.box {
+    display: inline-block;
+    text-align: left;
+    padding: 14px;
+    text-decoration: none;
+    color: #333333;
+    
+    &.activated {
+        background-color: #333333;
+        color: #ffffff;
+    }
+  }
+
+.box:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+.img_project {
+    width: 300px;
+    height: auto;
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0 0 5px;
+}

@@ -9,8 +9,8 @@ export class HeaderService {
   private colored = new BehaviorSubject<boolean>(false);
   currentColored = this.colored.asObservable();
 
-  constructor() { }
 
+  
   checkUpdateColored(scrollPosition: number, componentPosition: any) {
     if (scrollPosition >= componentPosition - 104) {
       this.colored.next(true);

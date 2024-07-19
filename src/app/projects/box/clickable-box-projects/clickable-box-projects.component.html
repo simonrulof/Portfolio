@@ -1,0 +1,4 @@
+<a [ngClass]="{ box: true, activated: box.activated}" (click)="onClick()">
+    <img [src]="box.image" class="img_project">
+    <div class="title">{{ box.project_name }}</div>
+</a>
