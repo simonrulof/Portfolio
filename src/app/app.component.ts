@@ -6,6 +6,8 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { CurrentlyComponent } from './currently/currently.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SkillListComponent } from "./skills/skill-list/skill-list.component";
+import { DividerComponent } from "./divider/divider.component";
+import { ProjectsComponent } from "./projects/projects.component";
 
 @Component({
   selector: 'app-root',
@@ -15,8 +17,10 @@ import { SkillListComponent } from "./skills/skill-list/skill-list.component";
     HomeComponent,
     AboutmeComponent,
     CurrentlyComponent,
-    SkillsComponent, 
-    SkillListComponent],
+    SkillsComponent,
+    SkillListComponent,
+    DividerComponent, 
+    ProjectsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

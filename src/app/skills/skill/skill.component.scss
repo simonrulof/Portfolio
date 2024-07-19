@@ -13,8 +13,16 @@
     border: 0;
     background-color: #096CB4;
 
-    transition: 0.5 s;
+    transition: 0.5s;
     &.filled {
         width: 80%;
     }
+}
+
+.skill_name {
+    font-family: "Roboto", sans-serif;
+    color: #333333;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0 0 5px;
 }
