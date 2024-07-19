@@ -8,17 +8,17 @@ import { Project } from '../models/Project';
 export class ProjectSelectorService {
 
     private boxes: Project[] = [
-        new Project("TASI Thesis", "/assets/images/wallpaper.jpg", "", ""),
-        new Project("Portfolio Site", "/assets/images/wallpaper.jpg",  "", ""),
-        new Project("IRIT Internship", "/assets/images/wallpaper.jpg",  "", ""),
-        new Project("Quadruped", "/assets/images/wallpaper.jpg",  "", ""),
-        new Project("Conveyor robot", "/assets/images/wallpaper.jpg",  "", "")
+        new Project("TASI Thesis", "/assets/images/wallpaper.jpg", "Salut c’est Simon. Paragraphe bien sympa parlant de ma vie en francais et en anglais parce que franchement ca rend vachement mieux vous trouvez pas ?", "https://www.youtube.com/embed/A7EDceh_ucg"),
+        new Project("Portfolio Site", "/assets/images/wallpaper.jpg",  "Salut c’est Simon. Paragraphe bien sympa parlant de ma vie en francais et en anglais parce que franchement ca rend vachement mieux vous trouvez pas ?", "https://www.youtube.com/embed/A7EDceh_ucg"),
+        new Project("IRIT Internship", "/assets/images/wallpaper.jpg",  "Salut c’est Simon. Paragraphe bien sympa parlant de ma vie en francais et en anglais parce que franchement ca rend vachement mieux vous trouvez pas ?", "https://www.youtube.com/embed/A7EDceh_ucg"),
+        new Project("Quadruped", "/assets/images/wallpaper.jpg",  "Salut c’est Simon. Paragraphe bien sympa parlant de ma vie en francais et en anglais parce que franchement ca rend vachement mieux vous trouvez pas ?", "https://www.youtube.com/embed/A7EDceh_ucg"),
+        new Project("Conveyor robot", "/assets/images/wallpaper.jpg",  "Salut c’est Simon. Paragraphe bien sympa parlant de ma vie en francais et en anglais parce que franchement ca rend vachement mieux vous trouvez pas ?", "https://www.youtube.com/embed/A7EDceh_ucg")
     ];
 
     private id_selected_behaviour = new BehaviorSubject<string>(this.boxes[0].id);
     id_selected = this.id_selected_behaviour.asObservable();
 
-    getBoxes(): Project[] {
+    getProjects(): Project[] {
         return [...this.boxes];
     }
       

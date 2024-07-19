@@ -1,1 +1,5 @@
-<p>project-content-list works!</p>
+@for (project of projects; track project.id) {
+    @if (id_selected === project.id){ 
+        <app-project-content [project]="project"/>
+    }
+}

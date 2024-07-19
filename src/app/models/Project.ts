@@ -8,7 +8,7 @@ export class Project {
     constructor(public project_name: string,
                 public image: string,
                 public content: string,
-                public videoLink: string) {
+                public video_link: string) {
         this.id = crypto.randomUUID().substring(0, 8)
     }
     

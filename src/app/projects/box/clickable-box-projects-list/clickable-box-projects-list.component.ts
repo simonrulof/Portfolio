@@ -18,7 +18,7 @@ export class ClickableBoxProjectsListComponent implements OnInit{
   constructor(private projectSelectorService: ProjectSelectorService) {}
   
   ngOnInit(): void {
-    this.boxes = this.projectSelectorService.getBoxes()
+    this.boxes = this.projectSelectorService.getProjects()
     this.boxes[0].activate()
   }
 }

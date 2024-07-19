@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Project } from '../../../models/Project';
 import { ProjectSelectorService } from '../../../services/projectSelector.service';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-project-content',
@@ -9,15 +10,13 @@ import { ProjectSelectorService } from '../../../services/projectSelector.servic
   templateUrl: './project-content.component.html',
   styleUrl: './project-content.component.scss'
 })
-export class ProjectContentComponent {
+export class ProjectContentComponent implements OnInit{
   
-  @Input() box!: Project;
-  filled: boolean = false;
+  @Input() project!: Project;
+  safeURL!: string;
 
-  constructor(private projectSelectorService: ProjectSelectorService) {}
-  
-  onClick(){
-    this.projectSelectorService.updateSelected_id(this.box.id)
+
+  ngOnInit(): void {
+    this.safeURL = this.project.video_link;
   }
-
 }
