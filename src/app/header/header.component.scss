@@ -70,3 +70,41 @@
   color: rgb(33, 33, 33);
   
 }
+
+
+.toggle-switch {
+  height: 36px;
+  width: 62px;
+  position: absolute;
+  right: 8%;
+  top: 35%;
+
+  input {
+    display: none;
+    &:checked + .slider::after {
+      transform: translateX(26px);
+    }
+  }
+  
+  .slider {
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    transition: 5s;
+    &::after {
+      border-radius: 30px;
+      position: absolute;
+      content: '';
+      height: 28px;
+      width: 28px;
+      background-color: white;
+      left: 4px;
+      bottom: 4px;
+      transition: 0.3s;
+    }
+  }
+}

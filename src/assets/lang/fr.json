@@ -1,0 +1,79 @@
+{
+    "header" : {
+        "aboutme" : "A Propos de moi",
+        "skills" : "Compétences",
+        "projects" : "Projets",
+        "contact" : "Contact"
+    },
+    
+    "home" : {
+        "name" : "Simon Berlanga",
+        "title" : "Ingénieur IA",
+        "button" : "Qui suis-je ?"
+    },
+
+    "aboutme" : {
+        "title" : "A PROPOS DE MOI",
+        "paragraphs" : {
+            "1" : "Salut c’est Simon. Paragraphe bien sympa parlant de ma vie en francais et en anglais parce que franchement ca rend vachement mieux vous trouvez pas ?",
+            "2" : "et puis la c’est juste pour le plaisir d’avoir un texte en plus qui rend bien."
+        }
+    },
+
+    "currently" : {
+        "title" : "ACTUELLEMENT",
+        "paragraphs" : {
+            "1" : "En recherche d'emploi"
+        }
+    },
+
+    "skills" : {
+        "title" : "COMPÉTENCES",
+        "skill-list" : {
+            "1" : {
+                "title" : "Python",
+                "percentage" : 90
+            },
+            "2" : {
+                "title" : "C",
+                "percentage" : 70
+            },
+            "3" : {
+                "title" : "Chêvre",
+                "percentage" : 100
+            },
+            "4" : {
+                "title" : "Chêvre",
+                "percentage" : 100
+            },
+            "5" : {
+                "title" : "Chêvre",
+                "percentage" : 100
+            },
+            "6" : {
+                "title" : "Chêvre",
+                "percentage" : 100
+            },
+            "7" : {
+                "title" : "Chêvre",
+                "percentage" : 100
+            },
+            "8" : {
+                "title" : "Chêvre",
+                "percentage" : 100
+            },
+            "9" : {
+                "title" : "Chêvre",
+                "percentage" : 100
+            }
+        }
+    },
+
+    "divider" : {
+        "content" : "A CONSTRUIRE"
+    },
+
+    "projects" : {
+        "title" : "PROJETS"
+    }
+}
